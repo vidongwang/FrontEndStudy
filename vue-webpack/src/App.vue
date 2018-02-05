@@ -1,19 +1,29 @@
 <template>
-    <div id="text">{{text}}</div>
+    <div id="app">
+        <h2>Vue + Webpack</h2>
+        <header>this is header</header>
+        <div class="content">
+            {{text}}
+        </div>
+        <footer>footer</footer>
+    </div>
 </template>
 
 <script>
     export default {
         data(){
             return {
-                text: 'hello vue'
+                text: 'Hello, Vue & Webpack!'
             }
-        }
+        },
+        // render(){
+        //     createElemet()
+        // }
     }
 </script>
 
 <style>
-    #text{
-        color:#red;
+    #app .content{
+        color:red;
     }
 </style>
