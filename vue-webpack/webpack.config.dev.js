@@ -59,7 +59,9 @@ const config = {
                     loader:'url-loader',
                     options: {
                         limit: 1024,
-                        name: 'img/[name].[ext]'
+                        // name: 'img/[name].[ext]',
+                        name: '[path][name].[ext]',
+                        publicPath: '/'
                     }
                 }
             }
@@ -82,7 +84,7 @@ const config = {
 if(isDev){
     config.devtool = '#cheap-module-eval-source-map'    // 源代码显示
     config.devServer = {
-        port: '8016',
+        port: '8019',
         host: '0.0.0.0',
         overlay: {
             errors: true,
