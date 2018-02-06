@@ -29,7 +29,7 @@ export default {
   },
   data() {
     return {
-      states: ['all', 'active', 'completed']
+      states: ['All', 'Active', 'Completed']
     }
   },
   computed: {
